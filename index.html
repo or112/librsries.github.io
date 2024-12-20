@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ספריות ציבוריות בישראל</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="jScripts/javascript.js"></script>
+</head>
+
+<body>
+
+<!-- פופאפ פרסומת -->
+<div id="promo-popup" class="popup">
+    <div class="popup-content">
+        <span id="close-popup" class="close-btn">&times;</span>
+        <h2>ספרייה חדשה נפתחה!</h2>  
+        <img src="images/generallibrary.jpg" alt="ספרייה חדשה" class="popup-image">
+        <p>הצטרפו אלינו לספרייה החדשה בפתח תקווה!</p>
+        <a href="https://www.example.com" target="_blank" class="popup-button">לקריאה נוספת</a>
+    </div>
+</div>
+
+
+
+    <div id="container">
+        <div class="nav-wrapper"> 
+        <nav>
+            <button id="nav-button" class="btn-mobile" onclick="toggleNav()"><img src="images/nav-icon.svg"
+                    alt="ניווט"></button>
+            <ul id="main-nav" class="flex-container-nav hide-mobile">
+                <button id="close-nav-button" class="btn-mobile" onclick="toggleNav()"><img src="images/nav-close.svg"
+                        alt="סגירה"></button>
+                <li><a href="index.html">דף הבית</a></li>
+                <li><a href="#">מאגר הספריות הגדול</a></li>
+                <li><a href="#">מנהלי הספריות</a></li>
+                <li><a href="#"> צרו קשר</a></li>
+            </ul>
+        </nav>
+    </div>
+        <main>
+            <div class="title-search-container">
+            <h1>
+                ספריות ציבוריות ברחבי ישראל
+            </h1>
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="הקלידו שם של עיר..." />
+                <button id="search-button">חפש</button>
+                <button id="reset-button" class="reset">איפוס </button>
+            </div>
+            </div>
+            <p id="errormsg" class="error"></p>
+            
+            <ul class="flex-container-subjects">
+                
+            </ul>
+
+    
+        </main>
+    </div>
+</body>
+
+</html>
